@@ -59,3 +59,26 @@ ol, ul {
 .game-info {
     margin-left: 20px;
 }
+
+.restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25%;
+    background-color: chartreuse;
+    border-radius: 20%;
+    size: 2vh;
+}
+
+.playerWins {
+    margin: 10%;
+    color: green;
+}
+
+.move-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -78,15 +78,15 @@ class Board extends React.Component {
 
   render() {
     let restartButton;
+    restartButton = (
+      <button className="restart" onClick={() => this.handleRestart()}>
+        Restart
+      </button>
+    );
     const winner = calculateWinner(this.state.squares, this.props.refreshWins);
     let status;
     if (winner) {
       status = "Winner: " + winner;
-      restartButton = (
-        <button className="restart" onClick={() => this.handleRestart()}>
-          Restart
-        </button>
-      );
     } else {
       status = this.state.xIsNext ? " NEXT PLAYER X" : " NEXT PLAYER O";
     }
